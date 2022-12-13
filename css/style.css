@@ -172,14 +172,15 @@ img {
 
 /* dreamsect */
 .dreamhead {
-    margin-left: 82px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     font-family: mySecondFont;
     font-size: 70px;
     color: #3A3A3A;
 }
 
 .dreampara {
-    margin-left: 82px; 
     align-items: center;
     display: flex;    
     justify-items: center;
@@ -1189,15 +1190,15 @@ img {
     align-items: center;
 }
 .auto-slider{
-   position: relative;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
     box-sizing: content-box;
     display: inline-block;
     padding: 10px 10px 20px;
     background: #fff;
-    max-width: 1100px;
-    margin-right: 160px;
-    margin-top: 30px;
-    margin-left: 200px; 
+    height: 100nh;
+    margin-top: 30px; 
     overflow: hidden;
     border-radius: 7px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
@@ -1237,14 +1238,3 @@ div#slider figure {
 }
 
 /* Slider indicator */
-.indicator{
-    width: 100%;
-    max-width: 1100px;
-    height: 6px;
-    background: #e41b17;
-    position: absolute;
-    bottom: 0;
-    
-    animation: indicating 5s ease infinite; 
-    
-}
