@@ -198,6 +198,66 @@
     .dream_why{
         padding: 0;
     }
+    .auto-slider{
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        box-sizing: content-box;
+        display: inline-block;
+        padding: 10px 10px 20px;
+        background: #fff;
+        height: 260px;
+        margin-top: 30px; 
+        overflow: hidden;
+        border-radius: 7px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+    }
+    
+    
+    @keyframes sliding{
+                0%{left: 0%; }
+                20%{left: -100%;}
+                40%{left: -200%;}
+                60%{left: -300%;}
+                80%{left: -400%;}
+                100%{left: 0%;}
+            }        
+            
+    @keyframes indicating{
+                from{
+                    left: -100%;
+                }
+                to{
+                    left: 0;
+                }
+    }  
+            
+            
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      height: 800%;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 25s sliding ease infinite; 
+    }
+    
+    /* Slider indicator */
+    .indicator{
+        margin-bottom: 140px;
+        height: 300px;
+        height: 6px;
+        background: #e41b17;
+        position: absolute;
+        bottom: 0;
+        
+        animation: indicating 5s ease infinite; 
+        
+    }
 }
 
 /* large styles */
