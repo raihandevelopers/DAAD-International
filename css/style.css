@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -175,7 +176,7 @@ img {
     display: flex;
     justify-content: center;
     justify-items: center;
-    font-family: mySecondFont;
+    font-family: 'Montserrat', sans-serif;
     font-size: 70px;
     color: #3A3A3A;
 }
